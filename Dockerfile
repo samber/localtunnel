@@ -1,6 +1,6 @@
-FROM mhart/alpine-node
-MAINTAINER Emmanuel Frecon <efrecon@gmail.com>
+FROM node:12-alpine
+MAINTAINER Samuel Berthe <dev@samuel-berthe.fr>
 
 RUN npm install -g localtunnel
 
-ENTRYPOINT ["node", "/usr/bin/lt"]
+ENTRYPOINT ["/usr/local/bin/lt"]
